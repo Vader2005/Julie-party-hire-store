@@ -12,13 +12,14 @@ conn = sqlite3.connect("People_info.db")
 c = conn.cursor()
 
 # Create the table
-
+'''
 c.execute("""CREATE TABLE info (
         Name text,
         Item text,
         Amount integer)
 
 """)
+'''
 
 # Commit the changes to the database
 conn.commit()
