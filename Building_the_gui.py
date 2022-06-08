@@ -3,6 +3,8 @@
 from tkinter import *
 import sqlite3
 
+main_window = Tk()
+
 # Making the database
 
 # Create the database table
@@ -21,11 +23,19 @@ c.execute("""CREATE TABLE info (
 """)
 '''
 
+def exit():
+    main_window.destroy()
+
+# Building the GUI
+
 # Commit the changes to the database
 conn.commit()
 
 # Close the database
 conn.close()
+
+main_window.geometry("600x600")
+main_window.mainloop()
 
 # The rows/tables I would have in the database
 # Name datatype = String
