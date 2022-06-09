@@ -8,3 +8,4 @@ Order of python files:
 4. Add_label_and_quit_button.py
 5. Building_the_labels.py
 6. Building_the_entries.py
+7. Building_the_submit_function.py
