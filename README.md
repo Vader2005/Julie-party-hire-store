@@ -12,3 +12,4 @@ Order of python files:
 8. Building_the_print_function.py
 9. Building_the_delete_function.py
 10. Building_the_terms_and_conditions.py
+11. Building_the_translate_feature.py
