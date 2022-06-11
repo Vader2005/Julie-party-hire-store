@@ -11,3 +11,4 @@ Order of python files:
 7. Building_the_submit_function.py
 8. Building_the_print_function.py
 9. Building_the_delete_function.py
+10. Building_the_terms_and_conditions.py
