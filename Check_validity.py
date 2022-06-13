@@ -59,6 +59,11 @@ def check_input():
         messagebox.showerror("Error", "Item cannot be empty")
         input_check = 1
 
+    # Make sure amount is not empty
+    if len(amount.get()) == 0:
+        messagebox.showerror("Error", "Amount cannot be empty")
+        input_check = 1
+
     # Make sure customer name can only take a string
     if Customer_name_entry.get().isdigit():
         messagebox.showerror("Error", "Customer name can only be a string")
