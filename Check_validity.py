@@ -249,7 +249,7 @@ Delete_entry.place(x=475, y=190)
 
 # Create spinbox for amount
 amount = StringVar()
-amount_entry = Spinbox(main_window, from_=1, to=50, textvariable=amount, wrap=False, state='readonly').place(x=125, y=235)
+amount_entry = Spinbox(main_window, from_=1, to=500, textvariable=amount, wrap=False, state='readonly').place(x=125, y=235)
 
 # Create combobox for the items
 item = StringVar()
