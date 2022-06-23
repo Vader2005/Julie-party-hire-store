@@ -207,7 +207,7 @@ def query():
     print_record = ''
 
     for record in records:
-        print_record += str(record[0]) + "\t\t" + str(record[1]) + "\t\t" + str(record[2]) + "\t\t" + str(record[3]) + '\n'
+        print_record += '\n' + str(record[0]) + "\t\t" + str(record[1]) + "\t\t" + str(record[2]) + "\t\t" + str(record[3]) + '\n\n'
 
     display_label = Label(main_window, text=print_record).place(x=25, y=350)
 
