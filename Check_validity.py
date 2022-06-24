@@ -74,6 +74,16 @@ def check_input():
     if input_check == 0:
         submit()
 
+# Building the instructions
+
+def instructions():
+    instruction = messagebox.showinfo("Instructions", """
+    
+    Enter the desired information in each of the entries.
+    To view results click Submit info and then Print info.
+    Note to delete info, you need to put in the receipt you want to delete and click delete.
+    Then click print info to reprint, however it may look messy so just exit out and rerun the application.""")
+
 # Building the Translate feature
 
 def Translate():
@@ -207,7 +217,7 @@ def query():
     print_record = ''
 
     for record in records:
-        print_record += '\n' + str(record[0]) + "\t\t" + str(record[1]) + "\t\t" + str(record[2]) + "\t\t" + str(record[3]) + '\n\n'
+        print_record += '\n' + str(record[0]) + "\t\t" + str(record[1]) + "\t\t" + str(record[2]) + "\t\t" + str(record[3]) + '\n'
 
     display_label = Label(main_window, text=print_record).place(x=25, y=350)
 
@@ -282,6 +292,9 @@ Languages_entry = ttk.Combobox(main_window, textvariable=translate, state='reado
 
 # Translate button
 Translate_button = Button(main_window, text="Translate", height = 3, width=8, command=Translate).place(x=490, y=270)
+
+# Create the instructions button
+Instructions_button = Button(main_window, text="Instructions", height=3, width=9, command=instructions).place(x=590, y=270)
 
 
 # Commit the changes to the database
