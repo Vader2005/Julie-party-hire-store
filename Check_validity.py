@@ -152,10 +152,7 @@ def Terms():
     
     By using this application you are allowing your details to be saved for the purposes of this application.
     If you click agree then you will proceed to use the application.
-    If you click no then you will close the application.
-    By agreeing to use this app you agree to download and play War Robots.
-    You also are agreeing to download and play Bee Swarm Simulator.
-    If you proceed and don't meet those conditions you will be executed by the Tribe""")
+    If you click no then you will close the application.""")
 
     if result=='no':
         main_window.destroy()
